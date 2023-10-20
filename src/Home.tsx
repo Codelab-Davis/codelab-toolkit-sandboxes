@@ -63,7 +63,7 @@ export default function Home() {
 
     return (
         <div className="flex place-content-center min-h-screen flex-wrap bg-neutral-900 p-16 text-white">
-            <h1 className="flex mb-16 w-full justify-center text-5xl font-bold">
+            <h1 className="flex mb-16 w-full justify-center text-5xl font-poppins">
                 CodeLab Toolkit Sandboxes 🧰
             </h1>
             <div className="flex w-full flex-wrap justify-center gap-8">
