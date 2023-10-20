@@ -4,34 +4,34 @@ import LinkGroupCard, { LinkType } from "./components/LinkGroupCard";
 export default function Home() {
     const useContextRoutes: LinkType[] = [
         {
-            title: "Usage",
+            title: "useContext Usage",
             link: "/usecontext/usage",
         },
         {
-            title: "Change",
+            title: "useContext Change",
             link: "/usecontext/change",
         },
         {
-            title: "Parent",
+            title: "useContext Parent",
             link: "/usecontext/parent",
         },
         {
-            title: "Bad",
+            title: "useContext Bad",
             link: "/usecontext/bad",
         },
         {
-            title: "Posts",
+            title: "useContext Posts",
             link: "/usecontext/posts",
         },
     ];
 
     const tailwindRoutes: LinkType[] = [
         {
-            title: "Color",
+            title: "Tailwind Color",
             link: "/tailwind/color",
         },
         {
-            title: "Font",
+            title: "Tailwind Font",
             link: "/tailwind/font",
         },
     ];
