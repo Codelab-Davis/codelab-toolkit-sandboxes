@@ -68,22 +68,22 @@ export default function Home() {
             </h1>
             <div className="flex w-full flex-wrap justify-center gap-8">
                 <LinkGroupCard
-                    title="useContext"
+                    title="🎍 useContext Hook"
                     description="Another Way to Share Data"
                     links={useContextRoutes}
                 />
                 <LinkGroupCard
-                    title="useReducer"
+                    title="🕹️ useReducer Hook"
                     description="A Safe Way To Interact With Data"
                     links={useReducerRoutes}
                 />
                 <LinkGroupCard
-                    title="Custom Hooks"
+                    title="🏗️ Custom Hooks"
                     description="Reusable Logic"
                     links={customHooksRoutes}
                 />
                 <LinkGroupCard
-                    title="Tailwind"
+                    title="🎨 Tailwind"
                     description="Utility First CSS"
                     links={tailwindRoutes}
                 />
