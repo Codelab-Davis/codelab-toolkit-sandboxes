@@ -1,5 +1,11 @@
 import { Link } from "react-router-dom";
-import { Card, CardContent, CardDescription, CardTitle } from "./ui/Card";
+import {
+    Card,
+    CardContent,
+    CardDescription,
+    CardHeader,
+    CardTitle,
+} from "./ui/Card";
 
 export type LinkType = {
     title: string;
@@ -8,19 +14,23 @@ export type LinkType = {
 
 type LinkGroupTypeCardProps = {
     title: string;
-    description: string;
+    description?: string;
     links: LinkType[];
 };
 
-export default function LinkGroupTypeCard({
+export default function LinkGroupCard({
     title,
     description,
     links,
 }: LinkGroupTypeCardProps) {
     return (
         <Card>
-            <CardTitle>{title}</CardTitle>
-            <CardDescription>{description}</CardDescription>
+            <CardHeader>
+                <CardTitle>{title}</CardTitle>
+                {description ? (
+                    <CardDescription>{description}</CardDescription>
+                ) : null}
+            </CardHeader>
             <CardContent>
                 {links.map((link) => (
                     <Link className="w-full" to={link.link}>

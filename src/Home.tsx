@@ -1,11 +1,40 @@
 import { Link } from "react-router-dom";
+import LinkGroupCard, { LinkType } from "./components/LinkGroupCard";
 
 export default function Home() {
+    const useContextRoutes: LinkType[] = [
+        {
+            title: "Usage",
+            link: "/usecontext/usage",
+        },
+        {
+            title: "Change",
+            link: "/usecontext/change",
+        },
+        {
+            title: "Parent",
+            link: "/usecontext/parent",
+        },
+        {
+            title: "Bad",
+            link: "/usecontext/bad",
+        },
+        {
+            title: "Posts",
+            link: "/usecontext/posts",
+        },
+    ];
+
     return (
         <div className="flex min-h-screen flex-wrap bg-neutral-900 p-8 text-white">
             <h1 className="mb-4 flex w-full justify-center text-4xl font-bold">
                 CodeLab Toolkit Sandboxes 🧰
             </h1>
+            <LinkGroupCard
+                title="useContext"
+                description="Another Way to Share Data"
+                links={useContextRoutes}
+            />
             <Link className="w-full" to="/usecontext/usage">
                 useContext Usage
             </Link>
