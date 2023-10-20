@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import LinkGroupCard, { LinkType } from "./components/LinkGroupCard";
 
 export default function Home() {
@@ -63,8 +62,8 @@ export default function Home() {
     ];
 
     return (
-        <div className="flex min-h-screen flex-wrap bg-neutral-900 p-16 text-white">
-            <h1 className="mb-8 flex w-full justify-center text-5xl font-bold">
+        <div className="flex place-content-center min-h-screen flex-wrap bg-neutral-900 p-16 text-white">
+            <h1 className="flex mb-16 w-full justify-center text-5xl font-bold">
                 CodeLab Toolkit Sandboxes 🧰
             </h1>
             <div className="flex w-full flex-wrap justify-center gap-8">

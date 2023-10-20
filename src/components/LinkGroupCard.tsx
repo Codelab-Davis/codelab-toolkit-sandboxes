@@ -49,7 +49,7 @@ type LinkDivProps = {
 function LinkDiv({ link }: LinkDivProps) {
     return (
         <Link className="w-full" to={link.link}>
-            <span className="border-b border-dashed border-blue-700">
+            <span className="border-b border-dashed border-blue-600 hover:text-blue-600 hover:border-solid transition-all duration-150 ease-in-out">
                 {link.title}
             </span>
         </Link>
