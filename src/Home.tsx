@@ -38,7 +38,7 @@ export default function Home() {
 
     return (
         <div className="flex min-h-screen flex-wrap bg-neutral-900 p-8 text-white">
-            <h1 className="mb-4 flex w-full justify-center text-4xl font-bold">
+            <h1 className="mb-8 flex w-full justify-center text-4xl font-bold">
                 CodeLab Toolkit Sandboxes 🧰
             </h1>
             <div className="flex w-full flex-wrap justify-center gap-8">
