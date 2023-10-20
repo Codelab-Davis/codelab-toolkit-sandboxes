@@ -24,7 +24,7 @@ export default function LinkGroupCard({
     links,
 }: LinkGroupTypeCardProps) {
     return (
-        <Card>
+        <Card className="min-w-[20em]">
             <CardHeader>
                 <CardTitle>{title}</CardTitle>
                 {description ? (

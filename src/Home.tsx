@@ -25,16 +25,34 @@ export default function Home() {
         },
     ];
 
+    const tailwindRoutes: LinkType[] = [
+        {
+            title: "Color",
+            link: "/tailwind/color",
+        },
+        {
+            title: "Font",
+            link: "/tailwind/font",
+        },
+    ];
+
     return (
         <div className="flex min-h-screen flex-wrap bg-neutral-900 p-8 text-white">
             <h1 className="mb-4 flex w-full justify-center text-4xl font-bold">
                 CodeLab Toolkit Sandboxes 🧰
             </h1>
-            <LinkGroupCard
-                title="useContext"
-                description="Another Way to Share Data"
-                links={useContextRoutes}
-            />
+            <div className="flex w-full flex-wrap justify-center gap-8">
+                <LinkGroupCard
+                    title="useContext"
+                    description="Another Way to Share Data"
+                    links={useContextRoutes}
+                />
+                <LinkGroupCard
+                    title="Tailwind"
+                    description="Utility First CSS"
+                    links={tailwindRoutes}
+                />
+            </div>
             <Link className="w-full" to="/usecontext/usage">
                 useContext Usage
             </Link>
