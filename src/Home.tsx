@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 export default function Home() {
     return (
         <div className="flex min-h-screen flex-wrap bg-neutral-900 p-8 text-white">
-            <h1 className="flex w-full justify-center text-4xl font-bold">
+            <h1 className="mb-4 flex w-full justify-center text-4xl font-bold">
                 CodeLab Toolkit Sandboxes 🧰
             </h1>
             <Link className="w-full" to="/usecontext/usage">
