@@ -7,6 +7,7 @@ import {
 } from "@codesandbox/sandpack-react";
 import { atomDark } from "@codesandbox/sandpack-themes";
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 const CustomSandbox = ({files}: {files: any}) => {
     return (
         <SandpackProvider
