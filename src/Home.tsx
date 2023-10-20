@@ -36,9 +36,35 @@ export default function Home() {
         },
     ];
 
+    const customHooksRoutes: LinkType[] = [
+        {
+            title: "Custom Hooks Counter",
+            link: "/custom-hooks/counter",
+        },
+        {
+            title: "Custom Hooks Theme",
+            link: "/custom-hooks/theme",
+        },
+    ];
+
+    const useReducerRoutes: LinkType[] = [
+        {
+            title: "useReducer Counter",
+            link: "/usereducer/counter",
+        },
+        {
+            title: "useReducer Context",
+            link: "/usereducer/context",
+        },
+        {
+            title: "useReducer Posts",
+            link: "/usereducer/posts",
+        },
+    ];
+
     return (
-        <div className="flex min-h-screen flex-wrap bg-neutral-900 p-8 text-white">
-            <h1 className="mb-8 flex w-full justify-center text-4xl font-bold">
+        <div className="flex min-h-screen flex-wrap bg-neutral-900 p-16 text-white">
+            <h1 className="mb-8 flex w-full justify-center text-5xl font-bold">
                 CodeLab Toolkit Sandboxes 🧰
             </h1>
             <div className="flex w-full flex-wrap justify-center gap-8">
@@ -48,47 +74,21 @@ export default function Home() {
                     links={useContextRoutes}
                 />
                 <LinkGroupCard
+                    title="useReducer"
+                    description="A Safe Way To Interact With Data"
+                    links={useReducerRoutes}
+                />
+                <LinkGroupCard
+                    title="Custom Hooks"
+                    description="Reusable Logic"
+                    links={customHooksRoutes}
+                />
+                <LinkGroupCard
                     title="Tailwind"
                     description="Utility First CSS"
                     links={tailwindRoutes}
                 />
             </div>
-            <Link className="w-full" to="/usecontext/usage">
-                useContext Usage
-            </Link>
-            <Link className="w-full" to="/usecontext/change">
-                useContext Change
-            </Link>
-            <Link className="w-full" to="/usecontext/parent">
-                useContext Parent
-            </Link>
-            <Link className="w-full" to="/usecontext/bad">
-                useContext Bad
-            </Link>
-            <Link className="w-full" to="/usecontext/posts">
-                useContext Posts
-            </Link>
-            <Link className="w-full" to="/tailwind/color">
-                Tailwind Color
-            </Link>
-            <Link className="w-full" to="/tailwind/font">
-                Tailwind Font
-            </Link>
-            <Link className="w-full" to="/custom-hooks/counter">
-                Custom Hooks Counter
-            </Link>
-            <Link className="w-full" to="/custom-hooks/theme">
-                Custom Hooks Theme
-            </Link>
-            <Link className="w-full" to="/usereducer/counter">
-                useReducer Counter
-            </Link>
-            <Link className="w-full" to="/usereducer/context">
-                useReducer Context
-            </Link>
-            <Link className="w-full" to="/usereducer/posts">
-                useReducer Posts
-            </Link>
         </div>
     );
 }
